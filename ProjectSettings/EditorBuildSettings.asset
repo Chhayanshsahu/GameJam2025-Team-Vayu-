@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8e8a538c154c02848b009ca289e2836a
+  - enabled: 1
+    path: Assets/Scenes/Envir.unity
+    guid: a0ba1e15211df354c96f0155946166ed
+  - enabled: 1
+    path: Assets/Scenes/JigSawPuzzle.unity
+    guid: 39e6dbf9ab7056b4397ad260704d9124
+  - enabled: 1
+    path: Assets/Scenes/Envir1.unity
+    guid: 399d5529503861945ba92c9efdb1a4d2
   m_configObjects: {}

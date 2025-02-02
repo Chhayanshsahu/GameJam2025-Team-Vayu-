@@ -405,7 +405,6 @@ GameObject:
   - component: {fileID: 733262054}
   - component: {fileID: 733262055}
   - component: {fileID: 733262056}
-  - component: {fileID: 733262057}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -421,8 +420,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733262049}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9999988, z: 0, w: 0.0015708691}
-  m_LocalPosition: {x: -3.92, y: 1.95, z: 5.31}
+  m_LocalRotation: {x: 0, y: 0.6883546, z: 0, w: 0.72537434}
+  m_LocalPosition: {x: 6.206, y: 1.95, z: 5.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -430,7 +429,7 @@ Transform:
   - {fileID: 1399291992}
   - {fileID: 862023300}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.82, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 87, z: 0}
 --- !u!143 &733262054
 CharacterController:
   m_ObjectHideFlags: 0
@@ -479,7 +478,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733262049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e5c174776548a5458ee7033d75af249, type: 3}
   m_Name: 
@@ -490,21 +489,6 @@ MonoBehaviour:
     m_Bits: 64
   _itemHoldPosition: {fileID: 862023300}
   door: {fileID: 0}
---- !u!114 &733262057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733262049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c317656aeb4dd94ab95b5454f53959a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanceToTrigger1: 5
-  distanceToTrigger2: 10
-  promptText: {fileID: 1497903536}
 --- !u!1 &862023299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2054187569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,9 +1158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c317656aeb4dd94ab95b5454f53959a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToTrigger1: 5
-  distanceToTrigger2: 10
   promptText: {fileID: 1497903536}
+  minDistanceToTrigger: 10
+  movementPrompt: "Find the keys to escape. Face what you\u2019ve buried."
+  roomPrompt: "A memory lost\u2026 a moment once golden. Can you piece it back together?"
+  roomTag: Room1
 --- !u!4 &2054187570
 Transform:
   m_ObjectHideFlags: 0
