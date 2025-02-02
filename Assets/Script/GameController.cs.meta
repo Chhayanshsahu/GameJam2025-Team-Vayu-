@@ -1,8 +1,16 @@
 fileFormatVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: 7318ac49380d234488f200bcb02001e4
 =======
 guid: c82b49fda9155a64eb0706c8838875dd
+>>>>>>> Stashed changes
+=======
+<<<<<<<< Updated upstream:Assets/Script/PlayerPickUp.cs.meta
+guid: 9e5c174776548a5458ee7033d75af249
+========
+guid: c82b49fda9155a64eb0706c8838875dd
+>>>>>>>> Stashed changes:Assets/Script/GameController.cs.meta
 >>>>>>> Stashed changes
 MonoImporter:
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Script/PlayerPickUp.cs.meta
 guid: 9e5c174776548a5458ee7033d75af249
+========
+guid: c82b49fda9155a64eb0706c8838875dd
+>>>>>>>> Stashed changes:Assets/Script/GameController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

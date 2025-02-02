@@ -1,11 +1,15 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 public class GameController : MonoBehaviour
 {
@@ -44,6 +48,8 @@ public class GameController : MonoBehaviour
             winText.SetActive(true);  // Activate win text
         }
 =======
+=======
+>>>>>>> Stashed changes
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -56,6 +62,9 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
