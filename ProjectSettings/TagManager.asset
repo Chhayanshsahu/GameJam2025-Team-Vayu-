@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key
+  - LockedDoor
+  - UnlockedDoor
+  - Room 1
+  - Room1
   layers:
   - Default
   - TransparentFX
@@ -11,8 +16,8 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
-  - 
+  - PickupItem
+  - Key
   - 
   - 
   - 

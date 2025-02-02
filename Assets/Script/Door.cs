@@ -1,76 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class DoorController : MonoBehaviour
 {
-public float openAngle = 90f; // Angle to rotate the door when opening
-    public float openSpeed = 2f; // Speed of the door opening
-    public float interactionDistance = 3f; // Distance within which the player can interact with the door
+    [SerializeField] private float openAngle = 90f;
+    [SerializeField] private float closeAngle = 0f;
+    [SerializeField] private float openSpeed = 2f;
+   // [SerializeField] private float interactionDistance = 3f;
 
-    private bool isOpen = false; // Track if the door is open
-    private Quaternion initialRotation; // Initial rotation of the door
-    private Quaternion targetRotation; // Target rotation when opening/closing
+    private bool isOpen = false;
+    private Quaternion initialRotation;
+    private Quaternion targetRotation;
 
-    void Start()
+    private void Start()
     {
-        // Store the initial rotation of the door
         initialRotation = transform.rotation;
         targetRotation = initialRotation;
-
-     
     }
 
-    void Update()
+    private void Update()
     {
-        // Smoothly rotate the door to the target rotation
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, openSpeed * Time.deltaTime);
-
-   
-
-        // Check if the player presses the "E" key
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            // Check if the player is close enough to the door
-            if (IsPlayerNearby())
-            {
-                ToggleDoor();
-            }
-        }
     }
 
-    // Toggle the door's open/close state
-    void ToggleDoor()
+    public void Open()
     {
-        isOpen = !isOpen;
-
-        if (isOpen)
+        if (!isOpen)
         {
-            // Rotate the door to the open position
+            isOpen = true;
             targetRotation = initialRotation * Quaternion.Euler(0, openAngle, 0);
-           
+            Debug.Log("Door is opening...");
         }
-        else
+        else 
         {
-            // Rotate the door back to the initial position
-            targetRotation = initialRotation;
-            
+            isOpen = false;
+            targetRotation = initialRotation * Quaternion.Euler(0, closeAngle, 0);
         }
-    }
-
-    // Check if the player is nearby
-    bool IsPlayerNearby()
-    {
-        // Find the player by tag (make sure your player GameObject has the "Player" tag)
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-        {
-            // Calculate the distance between the player and the door
-            float distance = Vector3.Distance(player.transform.position, transform.position);
-            return distance <= interactionDistance;
-        }
-
-        return false;
     }
 }
