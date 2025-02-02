@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - walls
+  - key
+  - enemy
+  - finalkey
+  - final
   layers:
   - Default
   - TransparentFX
